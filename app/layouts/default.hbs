@@ -11,9 +11,10 @@
   {{#if currentUser}}
     <a href="/user/logout"></a>
   {{else}}
-    <a class="nav__button" href="/user/signup">Sign up</a>
+  {{!-- it's me daisy I commented this part out --}}
+    {{!-- <a class="nav__button" href="/user/signup">Sign up</a>
     &nbsp;
-    <a class="nav__button" href="/user/login">Log in</a>
+    <a class="nav__button" href="/user/login">Log in</a> --}}
   {{/if}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
@@ -36,5 +37,6 @@
     <script src="/assets/js/remake-init.js"></script>
   {{/if}}
   <script src="/assets/js/main.js"></script>
+  <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
