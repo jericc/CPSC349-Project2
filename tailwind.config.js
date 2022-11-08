@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.hbs"],
+  content: ['./app/**/*.hbs', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     colors: {
       //color palette
@@ -16,5 +16,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+    require("daisyui")
+  ],
 }
