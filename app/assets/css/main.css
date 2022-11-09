@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -30,6 +30,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -44,6 +45,8 @@ html {
   /* 3 */
   font-family: Inter, sans-serif;
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -6090,18 +6093,6 @@ textarea.form-control.is-invalid {
   top: 24rem;
 }
 
-.row-start-1 {
-  grid-row-start: 1;
-}
-
-.row-end-4 {
-  grid-row-end: 4;
-}
-
-.row-end-5 {
-  grid-row-end: 5;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -6148,14 +6139,6 @@ textarea.form-control.is-invalid {
   margin-right: 0.5rem;
 }
 
-.mb-9 {
-  margin-bottom: 2.25rem;
-}
-
-.mr-9 {
-  margin-right: 2.25rem;
-}
-
 .block {
   display: block;
 }
@@ -6176,10 +6159,6 @@ textarea.form-control.is-invalid {
   display: table;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -6194,10 +6173,6 @@ textarea.form-control.is-invalid {
 
 .h-48 {
   height: 12rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .w-80 {
@@ -6216,30 +6191,6 @@ textarea.form-control.is-invalid {
   width: 100%;
 }
 
-.w-2\.5 {
-  width: 0.625rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-3\.5 {
-  width: 0.875rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -6252,28 +6203,8 @@ textarea.form-control.is-invalid {
   list-style-type: disc;
 }
 
-.auto-cols-auto {
-  grid-auto-columns: auto;
-}
-
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
 .grid-flow-col {
   grid-auto-flow: column;
-}
-
-.auto-rows-auto {
-  grid-auto-rows: auto;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -6312,20 +6243,8 @@ textarea.form-control.is-invalid {
   justify-content: space-evenly;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .overflow-y-auto {
@@ -6487,10 +6406,6 @@ textarea.form-control.is-invalid {
 
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-
-.pt-9 {
-  padding-top: 2.25rem;
 }
 
 .text-center {
@@ -6716,6 +6631,3 @@ textarea.form-control.is-invalid {
     width: 83.333333%;
   }
 }
-
-
-
