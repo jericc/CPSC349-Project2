@@ -431,7 +431,6 @@ html {
 
 :root {
   color-scheme: light;
-  --pf: 259 94% 41%;
   --sf: 314 100% 38%;
   --af: 174 60% 41%;
   --nf: 219 14% 22%;
@@ -453,7 +452,7 @@ html {
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
+  --p: 120 100% 25%;
   --pc: 0 0% 100%;
   --s: 314 100% 47%;
   --sc: 0 0% 100%;
@@ -465,6 +464,7 @@ html {
   --b2: 0 0% 95%;
   --b3: 180 2% 90%;
   --bc: 215 28% 17%;
+  --pf: 120 100% 20%;
 }
 
 h1 {
@@ -3705,6 +3705,13 @@ textarea.form-control.is-invalid {
   flex-grow: 1;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 .card figure {
   display: flex;
   align-items: center;
@@ -4487,10 +4494,27 @@ textarea.form-control.is-invalid {
   border-color: hsl(var(--b1) / var(--tw-border-opacity));
 }
 
+.btn-outline.btn-primary .badge {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+
 .btn-outline .badge.outline {
   --tw-border-opacity: 1;
   border-color: hsl(var(--nf, var(--n)) / var(--tw-border-opacity));
   background-color: transparent;
+}
+
+.btn-outline.btn-primary .badge-outline {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
 .btn-outline:hover .badge.outline {
@@ -4498,6 +4522,15 @@ textarea.form-control.is-invalid {
   border-color: hsl(var(--b2, var(--b1)) / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
+}
+
+.btn-outline.btn-primary:hover .badge {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pc) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pc) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
 .btn-outline.btn-primary:hover .badge.outline {
@@ -4569,6 +4602,27 @@ textarea.form-control.is-invalid {
   outline-offset: 2px;
 }
 
+.btn-primary {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+
+.btn-primary:hover,
+    .btn-primary.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid hsl(var(--p));
+}
+
 .btn.glass:hover,
     .btn.glass.btn-active {
   --glass-opacity: 25%;
@@ -4595,6 +4649,21 @@ textarea.form-control.is-invalid {
 
 .btn-ghost:focus-visible {
   outline: 2px solid currentColor;
+}
+
+.btn-outline.btn-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+}
+
+.btn-outline.btn-primary:hover,
+      .btn-outline.btn-primary.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf, var(--p)) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
 }
 
 .btn-disabled,
@@ -6530,6 +6599,10 @@ textarea.form-input.is-invalid {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -6643,11 +6716,6 @@ textarea.form-input.is-invalid {
 .bg-purple-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-
-.bg-purple-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 
 .bg-base-100 {

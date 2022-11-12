@@ -5,11 +5,19 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: ['./app/**/*.hbs', './node_modules/tw-elements/dist/js/**/*.js'],
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
+          primary: "green",
+          "primary-focus": "darkgreen",
+        },
+      },
+    ],
   },
   theme: {
     extend: {
-      
+
       gridTemplateRows: {
         // Simple 8 row grid
         '8': 'repeat(8, minmax(0, 1fr))',
@@ -20,7 +28,7 @@ module.exports = {
         // Simple 16 row grid
         '16': 'repeat(16, minmax(0, 1fr))',
       },
-      
+
       gridRowStart: {
         '8': '8',
         '9': '9',
@@ -33,7 +41,7 @@ module.exports = {
         '16': '16',
         '17': '17',
       },
-      
+
       gridRowEnd: {
         '8': '8',
         '9': '9',
@@ -49,24 +57,24 @@ module.exports = {
 
       colors: {
         //color palette
-        'green':{
-          100:'#cad2c5',
-          200:'#84a98c',
-          300:'#52796f',
-          400:'#354f52',
-          500:'#2f3e46',
+        'green': {
+          100: '#cad2c5',
+          200: '#84a98c',
+          300: '#52796f',
+          400: '#354f52',
+          500: '#2f3e46',
         },
 
         //using the same name as tailwind will override tailwinds default colors for that color and also the shades of that color, so better to use unique name
-        'my-gray':'#e5e5e5',
-        'my-white':'#FFFFFF',
-        
+        'my-gray': '#e5e5e5',
+        'my-white': '#FFFFFF',
+
       },
-      
+
       maxHeight: {
         '128': '32rem',
       },
-      
+
     },
   },
   plugins: [

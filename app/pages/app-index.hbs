@@ -11,8 +11,7 @@
     <main class="flex flex-wrap justify-between lg:justify-around h-full w-auto m-1">
       {{!-- FLEX BOX 1 CONTAINER: DIARY ENTRIES--}}
       <div class="flex flex-col items-center min-h-min content-center xl:w-3/5 bg-green-100">
-        <div
-          class="diary-entry scrollbar">
+        <div class="diary-entry scrollbar">
           <h2 class="text-white font-bold mb-5">Day End</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -57,8 +56,7 @@
             reprehenderit in voluptate velit esse cillum dolore eu.
           </p>
         </div>
-        <div
-          class="diary-entry scrollbar">
+        <div class="diary-entry scrollbar">
           <h2 class="text-white font-bold text-xl mb-5">Day NEXT</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -69,8 +67,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
         </div>
-        <div
-          class="diary-entry scrollbar">
+        <div class="diary-entry scrollbar">
           <h2 class="text-white font-bold text-xl mb-5">Day Start</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -84,66 +81,37 @@
       </div>
       {{!-- FLEX BOX 2: TO DO & SPECIAL EVENTS--}}
       <div class="flex flex-col items-center min-h-min content-center xl:w-2/5 bg-green-100  ">
+
         <div class="card min-w-96 sm:w-11/12 bg-base-100 shadow-xl image-full m-5 max-h-128 overflow-y-auto scrollbar">
           <figure><img src="https://placeimg.com/1280/720/nature" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">ToDo List</h2>
-            <ul class="list-disc">
-              <li>Do </li>
-              <li>Do something else</li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>Do </li>
-              <li>Do something else</li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>Do </li>
-              <li>Do something else</li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li>reprehenderit in voluptate velit esse cillum dolore eu.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
+          <div object class="card-body">
+            <h2 class="card-title">To Do List</h2>
+            <ul array key="todos" sortable class="list-disc">
+              {{#for todo in todos}}
+              <li object key:text="@innerText" edit:text>{{default todo.text "New item"}}</li>
+              {{/for}}
             </ul>
+            <div class="card-actions justify-start">
+              <button new:todo class="btn btn-primary">Add Item</button>
+            </div>
           </div>
         </div>
+
         <div class="card min-w-96 sm:w-11/12 bg-base-100 shadow-xl image-full m-5 max-h-128 overflow-y-auto scrollbar">
           <figure><img src="https://placeimg.com/1280/720/people" alt="Shoes" /></figure>
-          <div class="card-body">
+          <div object class="card-body">
             <h2 class="card-title">Special Events</h2>
-            <ul class="list-disc">
-              <li>Someone Bday</li>
-              <li>Christmas</li>
+            <ul array key="events" sortable class="list-disc">
+              {{#for event in events}}
+              <li object key:text="@innerText" edit:text>{{default event.text "New item"}}</li>
+              {{/for}}
             </ul>
+            <div class="card-actions justify-start">
+              <button new:todo class="btn btn-primary">Add Item</button>
+            </div>
           </div>
         </div>
+
       </div>
     </main>
     {{!-- Page content end here --}}
@@ -168,8 +136,7 @@
       <hr class="my-3">
       <ul class="relative px-1">
         <li class="relative">
-          <a class="sidebar-link"
-            href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+          <a class="sidebar-link" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
@@ -183,8 +150,7 @@
       </ul>
       <ul class="relative px-1">
         <li class="relative">
-          <a class="sidebar-link"
-            href="/about" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+          <a class="sidebar-link" href="/about" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
@@ -194,8 +160,7 @@
             </svg>
             <span>About</span>
           </a>
-          <a class="sidebar-link"
-            href="/user/logout" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+          <a class="sidebar-link" href="/user/logout" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
