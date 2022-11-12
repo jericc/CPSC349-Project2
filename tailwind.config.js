@@ -6,6 +6,7 @@ module.exports = {
   },
   theme: {
     extend: {
+      
       gridTemplateRows: {
         // Simple 8 row grid
         '8': 'repeat(8, minmax(0, 1fr))',
@@ -16,6 +17,7 @@ module.exports = {
         // Simple 16 row grid
         '16': 'repeat(16, minmax(0, 1fr))',
       },
+      
       gridRowStart: {
         '8': '8',
         '9': '9',
@@ -28,6 +30,7 @@ module.exports = {
         '16': '16',
         '17': '17',
       },
+      
       gridRowEnd: {
         '8': '8',
         '9': '9',
@@ -53,6 +56,11 @@ module.exports = {
         'gray':'#e5e5e5',
         'white':'#FFFFFF',
       },
+      
+      maxHeight: {
+        '128': '32rem',
+      },
+      
     },
   },
   plugins: [

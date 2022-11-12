@@ -1,83 +1,217 @@
-<main class="flex flex-row justify-start font-serif">
-  <nav class="bg-white w-80 py-32 px-8 shadow-2xl fixed h-screen">
-    <h1 class="text-green-300 text-5xl font-bold">MyDiary</h1>
-    <ul class="flex flex-col py-16 justify-between h-80">
-      <li>
-        <div class="flex gap-4">
-          <img src="../assets/images/user.png" alt="profile-img">
-          <p>Profile</p>
+<div class="drawer drawer-mobile">
+  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col items-center justify-center bg-green-100">
+    <!-- Page content here -->
+    {{!-- OPEN MENU DRAWER BUTTON --}}
+    <div class="lg:hidden h-12 mt-20">
+      <label for="my-drawer-2" data-mdb-ripple="true" data-mdb-ripple-color="light"
+        class="inline-block px-6 py-2.5 bg-amber-400 text-black font-bold text-base leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">Menu</label>
+    </div>
+    {{!-- FLEX CONTAINER WRAPPER --}}
+    <div class="flex flex-wrap justify-between lg:justify-around h-full w-auto m-1 bg-purple-400">
+      {{!-- FLEX BOX 1 CONTAINER: DIARY ENTRIES--}}
+      <div class="flex flex-col items-center min-h-min content-center xl:w-3/5 bg-green-100">
+        <div
+          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
+          <h2 class="text-white font-bold text-xl mb-5">Day End</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+          </p>
         </div>
-      </li>
-      <li>
-        <div class="flex gap-4">
-          <img src="../assets/images/add.png" alt="create-img">
-          <p>Create</p>
+        <div
+          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
+          <h2 class="text-white font-bold text-xl mb-5">Day NEXT</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          </p>
         </div>
-      </li>
-      <li>
-        <div class="flex gap-4">
-          <img src="../assets/images/logout.png" alt="logout-img">
-          <p>Log Out</p>
+        <div
+          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
+          <h2 class="text-white font-bold text-xl mb-5">Day Start</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          </p>
         </div>
-      </li>
-    </ul>
-  </nav>
-  <div class="flex flex-col items-center min-h-screen bg-green-100 ">
-    <div class="bg-green-200 my-2 p-5 rounded-xl flex flex-col items-center w-2/5 h-48 overflow-y-auto ">
-      <h2 class="text-white font-bold text-xl mb-5">Day 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu.
-      </p>
+      </div>
+      {{!-- FLEX BOX 2: TO DO & SPECIAL EVENTS--}}
+      <div class="flex flex-col items-center min-h-min content-center xl:w-2/5 bg-green-100  ">
+        <div class="card min-w-96 sm:w-11/12 bg-base-100 shadow-xl image-full m-5 max-h-128 overflow-y-auto scrollbar">
+          <figure><img src="https://placeimg.com/1280/720/nature" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">ToDo List</h2>
+            <ul class="list-disc">
+              <li>Do </li>
+              <li>Do something else</li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Do </li>
+              <li>Do something else</li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Do </li>
+              <li>Do something else</li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>reprehenderit in voluptate velit esse cillum dolore eu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card min-w-96 sm:w-11/12 bg-base-100 shadow-xl image-full m-5 max-h-128 overflow-y-auto scrollbar">
+          <figure><img src="https://placeimg.com/1280/720/people" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Special Events</h2>
+            <ul class="list-disc">
+              <li>Someone Bday</li>
+              <li>Christmas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="bg-green-200 my-2 p-5 rounded-xl flex flex-col items-center w-2/5 h-48 overflow-y-auto ">
-      <h2 class="text-white font-bold text-xl mb-5">Day 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu.
-      </p>
-    </div>
-    <div class="bg-green-200 my-2 p-5 rounded-xl flex flex-col items-center w-2/5 h-48 overflow-y-auto ">
-      <h2 class="text-white font-bold text-xl mb-5">Day 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu.
-      </p>
-    </div>
-    <div class="bg-green-200 my-2 p-5 rounded-xl flex flex-col items-center w-2/5 h-48 overflow-y-auto ">
-      <h2 class="text-white font-bold text-xl mb-5">Day 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu.
-      </p>
-    </div>
+    {{!-- Page content end here --}}
   </div>
-  <section class="flex flex-col justify-around w-80 fixed right-10 ">
-    <div class="bg-white px-10 py-5 border border-green-200 fixed top-16 w-80">
-      <h2 class="text-green-200 font-bold mb-5 text-3xl font">ToDo</h2>
-      <ul class="list-disc">
-        <li>Do </li>
-        <li>Do HW dfsdfds</li>
+  <div class="drawer-side">
+    <label for="my-drawer-2" class="drawer-overlay"></label>
+    {{!-- SIDEBAR BEGIN --}}
+    <div class="menu p-4 min-w-fit w-1/2 md:w-1/3 lg:w-64 xl:w-80 bg-base-100 text-base-content">
+      <!-- Sidebar content here -->
+      <div class="pt-4 pb-2 px-6">
+        <a href="#!">
+          <div class="flex items-center">
+            <div class="shrink-0">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-10" alt="Avatar">
+            </div>
+            <div class="grow ml-3">
+              <p class="text-sm sm:text-base font-semibold">FirstName LastName</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <hr class="my-3">
+      <ul class="relative px-1">
+        <li class="relative">
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+            href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
+              clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m20 20h-15.25c-.414 0-.75.336-.75.75s.336.75.75.75h15.75c.53 0 1-.47 1-1v-15.75c0-.414-.336-.75-.75-.75s-.75.336-.75.75zm-1-17c0-.478-.379-1-1-1h-15c-.62 0-1 .519-1 1v15c0 .621.52 1 1 1h15c.478 0 1-.379 1-1zm-9.25 6.75v-3c0-.414.336-.75.75-.75s.75.336.75.75v3h3c.414 0 .75.336.75.75s-.336.75-.75.75h-3v3c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-3h-3c-.414 0-.75-.336-.75-.75s.336-.75.75-.75z"
+                fill-rule="nonzero" />
+            </svg>
+            <span>Create</span>
+          </a>
+        </li>
       </ul>
-    </div>
-    <div class="bg-white px-10 py-5 border border-green-200 fixed top-96 w-80">
-      <h2 class="text-green-200 font-bold mb-5 text-3xl">Special Events</h2>
-      <ul>
-        <li>Someone Bday</li>
-        <li>Christmas</li>
+      <ul class="relative px-1">
+        <li class="relative">
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+            href="/about" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
+              clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.981 8.444h20.038c.398 0 .747.264.856.648l1.105 3.904.02.139c0 .209-.127.402-.33.48l-.001.001c-.24.092-.511-.005-.635-.231l-1.144-2.071-.328 7.967c-.017.403-.347.719-.749.719h-.001c-.393 0-.716-.306-.746-.698-.068-.865-.249-2.933-.304-3.752-.022-.34-.271-.54-.541-.54-.242 0-.514.2-.537.54-.055.819-.236 2.887-.304 3.752-.03.392-.352.698-.746.698h-.001c-.402 0-.732-.316-.749-.719-.086-2.08-.435-8.736-.435-8.736h-1.669s-.349 6.656-.435 8.736c-.017.402-.347.719-.749.719h-.001c-.394 0-.716-.306-.746-.698-.068-.865-.249-2.933-.304-3.752-.023-.34-.295-.54-.537-.54h-.004c-.242 0-.515.2-.537.54-.055.819-.236 2.887-.304 3.752-.03.392-.353.698-.746.698h-.001c-.402 0-.732-.316-.749-.719-.086-2.08-.435-8.736-.435-8.736h-1.681s-.349 6.656-.435 8.736c-.017.403-.347.719-.749.719h-.001c-.394 0-.716-.306-.746-.698-.068-.865-.249-2.933-.304-3.752-.023-.34-.295-.54-.537-.54-.27 0-.519.2-.541.54-.055.819-.236 2.887-.304 3.752-.03.392-.353.698-.746.698h-.001c-.402 0-.732-.316-.749-.719l-.328-7.967-1.144 2.071c-.124.226-.395.323-.635.231l-.001-.001c-.203-.078-.33-.271-.33-.48l.02-.139 1.105-3.904c.109-.384.458-.648.856-.648zm3.019-4.444c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm14 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-6.994 0c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"
+                fill-rule="nonzero" />
+            </svg>
+            <span>About</span>
+          </a>
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+            href="/user/logout" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
+              clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 13.408l2.963 2.592-2.963 2.592v-1.592h-6v-2h6v-1.592zm-2-4.408v4h-6v6h6v4l8-7-8-7zm0-2v-6h-16v18l8-7v-9h6v4h2z"
+                fill-rule="nonzero" />
+            </svg>
+            <span>Log out</span>
+          </a>
+        </li>
       </ul>
+      <div class="text-center bottom-0 absolute w-10/12">
+        <hr class="m-0">
+        <p class="py-2 text-sm text-gray-700">© 2022 | CPSC 349 | Project 2 Team 1</p>
+      </div>
     </div>
-  </section>
-</main>
+    {{!-- SIDEBAR END --}}
+  </div>
+</div>

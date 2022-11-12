@@ -12,7 +12,7 @@
     "dev": "cross-env NODE_ENV=development nodemon _remake/server.js --watch ./",
     "remake-build": "npx esbuild _remake/client-side/index.js --bundle --minify --sourcemap=external --outdir=_remake/dist/remake/js --target=edge18 --format=iife --global-name=Remake && mv _remake/dist/remake/js/index.js _remake/dist/remake/js/remake.min.js && mv _remake/dist/remake/js/index.js.map _remake/dist/remake/js/remake.min.js.map && echo '//# sourceMappingURL=remake.min.js.map' >> _remake/dist/remake/js/remake.min.js",
     "test": "ava && vnu --Werror ./app/pages/**/*.hbs",
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./app/assets/css/main.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./app/assets/css/main.css --watch --poll",
     "start": "npm-run-all --parallel dev tailwind"
   },
   "nodemonConfig": {
