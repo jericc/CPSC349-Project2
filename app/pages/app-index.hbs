@@ -8,12 +8,12 @@
         class="inline-block px-6 py-2.5 bg-amber-400 text-black font-bold text-base leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">Menu</label>
     </div>
     {{!-- FLEX CONTAINER WRAPPER --}}
-    <div class="flex flex-wrap justify-between lg:justify-around h-full w-auto m-1 bg-purple-400">
+    <main class="flex flex-wrap justify-between lg:justify-around h-full w-auto m-1">
       {{!-- FLEX BOX 1 CONTAINER: DIARY ENTRIES--}}
       <div class="flex flex-col items-center min-h-min content-center xl:w-3/5 bg-green-100">
         <div
-          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
-          <h2 class="text-white font-bold text-xl mb-5">Day End</h2>
+          class="diary-entry scrollbar">
+          <h2 class="text-white font-bold mb-5">Day End</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -58,7 +58,7 @@
           </p>
         </div>
         <div
-          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
+          class="diary-entry scrollbar">
           <h2 class="text-white font-bold text-xl mb-5">Day NEXT</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -70,7 +70,7 @@
           </p>
         </div>
         <div
-          class="bg-green-200 shadow-xl m-5 p-5 rounded-xl flex flex-col items-center w-11/12 overflow-y-auto max-h-96 sm:max-h-128 shrink-0 scrollbar">
+          class="diary-entry scrollbar">
           <h2 class="text-white font-bold text-xl mb-5">Day Start</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -145,7 +145,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     {{!-- Page content end here --}}
   </div>
   <div class="drawer-side">
@@ -168,7 +168,7 @@
       <hr class="my-3">
       <ul class="relative px-1">
         <li class="relative">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+          <a class="sidebar-link"
             href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
@@ -183,7 +183,7 @@
       </ul>
       <ul class="relative px-1">
         <li class="relative">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+          <a class="sidebar-link"
             href="/about" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
@@ -194,7 +194,7 @@
             </svg>
             <span>About</span>
           </a>
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-700 hover:bg-green-50 transition duration-300 ease-in-out sm:text-xl"
+          <a class="sidebar-link"
             href="/user/logout" data-mdb-ripple="true" data-mdb-ripple-color="primary">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-6 h-6 mr-6" role="img"
               clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"

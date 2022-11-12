@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ['./app/**/*.hbs', './node_modules/tw-elements/dist/js/**/*.js'],
   daisyui: {
@@ -53,8 +56,11 @@ module.exports = {
           400:'#354f52',
           500:'#2f3e46',
         },
-        'gray':'#e5e5e5',
-        'white':'#FFFFFF',
+
+        //using the same name as tailwind will override tailwinds default colors for that color and also the shades of that color, so better to use unique name
+        'my-gray':'#e5e5e5',
+        'my-white':'#FFFFFF',
+        
       },
       
       maxHeight: {
