@@ -6,6 +6,7 @@
   <title>Your App</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/flash.css">
 </head>
 <body>
   {{#if currentUser}}
@@ -19,13 +20,13 @@
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
-      <div>{{ this }}</div>
+      <div class="flash flash--error">{{ this }}</div>
     {{/each}}
   {{/if}}
   {{!-- Show success messages --}}
   {{#if flashSuccesses }}
     {{#each flashSuccesses }}
-      <div>{{ this }}</div>
+      <div class="flash flash--success">{{ this }}</div>
     {{/each}}
   {{/if}}
   {{> yield }}
